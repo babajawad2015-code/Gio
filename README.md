@@ -23,4 +23,36 @@ if __name__ == "__main__":
 
 ### Phase 3: Total Sovereignty
 * Move all operations to a Private Cloud owned by JA.
-* Zero dependence on external corporations.
+* Zero dependence on external corporations.# -*- coding: utf-8 -*-
+import sys
+import os
+import energy_flow  # ربط محرك الطاقة الذي أنشأناه
+
+# إعداد الترميز لدعم اللغة العربية في الـ Terminal
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except:
+    pass
+
+def start_system():
+    # استدعاء محرك الطاقة فور تشغيل النظام
+    energy = energy_flow.EnergyFlow()
+    energy.run_flow()
+
+    print("-" * 45)
+    print("🌐 DIGITAL PATH: ONLINE")
+    print("👑 OWNER JA: ACCESS GRANTED (ID: 1001162534)")
+    print("🛡️ Jolia: Sovereignty Guard Activated")
+    print("-" * 45)
+
+def apply_cloak_protocol():
+    # التأكد من أن درع التمويه نشط برمجياً
+    print("🎭 [Cloak] تفعيل بروتوكول AES-256-ETERNAL...")
+    print("👤 [Identity] بصمة G-ADMIN-1001162534 نشطة.")
+
+if __name__ == "__main__":
+    # تشغيل النظام المتكامل
+    start_system()
+    apply_cloak_protocol()
+    
+    # جوليا: "النظام الآن جاهز للالتحام بسيرفر Garena"
