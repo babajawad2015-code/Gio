@@ -100,4 +100,22 @@ if __name__ == "__main__":
     start_system()
     apply_cloak_protocol()
     
-    # جوليا: "النظام الآن جاهز للالتحام بسيرفر Garena"
+    # جوليا: "النظام الآن جاهز للالتحام بسيرفر Gaimport base64
+
+def exfiltrate_data(data_package):
+    """تشفير وسحب البيانات قبل الخروج النهائي"""
+    print(f"📡 جاري بدء عملية [Exfiltrate]...")
+    
+    # تحويل البيانات إلى صيغة مشفرة (Base64) لتمويه محتواها أثناء النقل
+    encoded_exfil = base64.b64encode(data_package.encode()).decode()
+    
+    print(f"📦 تم تأمين 'الحزمة السيادية': {encoded_exfil[:15]}...")
+    print(f"🔒 تم النقل بنجاح إلى معقل Sovereign JA في مراكش.")
+    
+    # مسح السجلات المؤقتة في السحابة لعدم ترك أثر
+    print(f"🧹 تنظيف السجلات (Wiping Logs)... تَم بنسبة 100%")
+
+if __name__ == "__main__":
+    # استخلاص حالة الـ Zero Defects والسيادة
+    exfiltrate_data("ID:1006162534|RANK:SUPREME-ADMIN|STATUS:ZERO-DEFECTS")
+    rena"
