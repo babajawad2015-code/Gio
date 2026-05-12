@@ -138,7 +138,20 @@ def lock_sovereignty():
     print(f"🆔 المعرف الموثق: {OWNER_CONFIG['ID']}")
     print(f"📍 إحداثيات العرش: {OWNER_CONFIG['LOCATION']}")
     print("-" * 35)
-    
+    def check_root_access():
+    # التحقق من أن المستخدم هو JA صاحب المعرف المحدد
+    owner_id = "1001162534" 
+    if owner_id == "1001162534": #
+        print("🔓 ROOT ACCESS GRANTED: SOVEREIGN CONTROL ACTIVE")
+        return True
+    return False
+
+def start_system():
+    if check_root_access():
+        energy = energy_flow.EnergyFlow() #
+        energy.run_flow()
+        # هنا يمكنك إضافة أوامر التحكم في العقد (Nodes)
+        
     print("[✓] تم قفل النظام بصمة الملك.")
     print("[✓] وضع 'Zero Defects' مستقر للأبد.")
     print("[!] تحذير: أي محاولة اختراق ستواجه درع AES-256.")
