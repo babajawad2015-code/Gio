@@ -194,5 +194,25 @@ d Network Configs"`
 **سؤال تقني:** هل تريدني أن أساعدك في إضافة "قسم الأكواد" (Python Scripts) التي تقوم بضبط إعدادات الـ MTU أو الـ DNS تلقائياً داخل المستودع؟
 
 
+    def optimize_network_hardware():
+    print("🛠️ Applying Manual Network Configs...")
+    # ضبط MTU و MSS للوصول لأداء 0 عيوب
+    os.system("ifconfig eth0 mtu 1400") # ضبط يدوي
+    print("✅ MTU set to 1400")
     
+    # تحسين الـ DNS لتقليل زمن الاستجابة
+    with open("/etc/resolv.conf", "w") as f:
+        f.write("nameserver 1.1.1.1\n") # Cloudflare
+        f.write("nameserver 8.8.8.8\n") # Google
+    print("✅ DNS Optimized for Gaming")1001162534
+EUROPE-WEST1
+git
+network_configs.py
+
+
+if check_root_access():
+    optimize_network_hardware()main.py
+network_configs.py
+matrix_view.py
+
     
