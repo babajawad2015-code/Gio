@@ -174,11 +174,21 @@ This project is dedicated to achieving a **Zero Defects** network state, focusin
 Run the following to see the Sovereign JA Terminal Matrix:
 ```bash
 python matrix_view.py
-### 3. نصيحة للمحترفين (GitHub Workflow)
+### 3. نصيحة للمحترفين (GitHub Workflow)print
+EUROPE-WEST1
+git add .
+git commit -m "Add Matrix Visual and Network Configs"
+git push origin main
+ping
+
 بما أنك تستخدم **Termux**، يمكنك تنفيذ هذه الأوامر لرفع الكود مباشرة من هاتفك إلى GitHub:
 
 1.  `git add .`
-2.  `git commit -m "Add Matrix Visual and Network Configs"`
+2.  `git commit -m "Add Matrix Visual anMatrix
+print("📡 NETWORK STATUS: OPTIMIZED (0 DEFECTS)")
+print("🔐 ROOT ACCESS: ACTIVE [OWNER: JA]")
+print("🌐 PROXY NODE: CONNECTED (EUROPE-WEST1)")
+d Network Configs"`
 3.  `git push origin main`
 
 **سؤال تقني:** هل تريدني أن أساعدك في إضافة "قسم الأكواد" (Python Scripts) التي تقوم بضبط إعدادات الـ MTU أو الـ DNS تلقائياً داخل المستودع؟
