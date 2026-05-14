@@ -173,7 +173,28 @@ This project is dedicated to achieving a **Zero Defects** network state, focusin
 ## 🛠️ Visual Interface
 Run the following to see the Sovereign JA Terminal Matrix:
 ```bash
-python matrigit add sniper.py
+pytapply_sovereign_optimization():
+    # إعدادات الـ MTU و MSS التي تفضلها للتحكم الكامل
+    mtu_value = 1400  # القيمة التي تستخدمها عادةً
+    mss_value = 1360
+    
+    print(f"Applying Sovereign JA Protocol...")
+    
+    # تحسين خوارزمية التحكم في الازدحام (TCP Congestion Control)
+    os.system("sysctl -w net.core.default_qdisc=fq")
+    os.system("sysctl -w net.ipv4.tcp_congestion_control=bbr")
+    
+    # ضبط إعدادات الواجهة (Interface) لتقليل التأخير
+    # ملاحظة: تأكد من استبدال 'wlan0' باسم الواجهة في جهازك
+    os.system(f"ifconfig wlan0 mtu {mtu_value}")
+    
+    print("Optimization Applied: 0 Defects Target Reached.")
+
+if __name__ == "__main__":
+    apply_sovereign_optimization()
+JA-Network-Optimizer
+main.py
+hon matrigit add sniper.py
 git commit -m "Activate Immortal Soul Protocol"
 git push origin main
 git clone https://github.com/your-username/JA-Network-Optimizer.git
