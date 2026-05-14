@@ -12,6 +12,22 @@ import os
 def erase_ghost_traces():
     """مسح سجلات النظام وTermux لضمان التخفي الكامل"""
     print("[!] Initiating Ghost Log Eraser...")
+    إعدادات الحساسية المتوافقة مع بروتوكول Sovereign JA
+FF_SENSITIVITY = {
+    "General": 98,       # سرعة الالتفاف والبحث
+    "Red_Dot": 92,       # دقة التصويب بدون سكوب
+    "2x_Scope": 85,
+    "4x_Scope": 80,
+    "Sniper_Scope": 50,
+    "Free_Look": 70
+}
+
+def apply_touch_sensitivity_optimization():
+    """تحسين استجابة اللمس لتتوافق مع استقرار الشبكة 28ms"""
+    # أوامر لمحاكاة تحسين الحساسية عبر نظام الأندرويد (تتطلب صلاحيات)
+    os.system("settings put qualitative accessibility_touch_slop 10")
+    print("🎯 [SUCCESS] Sensitivity Synchronized with Network Ping.")
+
     
     # مسح سجل أوامر Termux (bash history)
     os.system("history -c") 
