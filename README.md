@@ -1,3 +1,28 @@
+JA-Network-Optimizer
+import os
+
+def erase_ghost_traces():
+    """مسح سجلات النظام وTermux لضمان التخفي الكامل"""
+    print("[!] Initiating Ghost Log Eraser...")
+    
+    # مسح سجل أوامر Termux (bash history)
+    os.system("history -c") 
+    
+    # مسح ملفات السجلات المؤقتة التي قد تكشف التعديلات اليدوية
+    log_files = [
+        "/data/data/com.termux/files/home/.bash_history",
+        "/var/log/lastlog",
+        "/var/log/wtmp"
+    ]
+    
+    for log in log_files:
+        if os.path.exists(log):
+            os.system(f"truncate -s 0 {log}") # تصفير الملف دون حذفه لتجنب الشك
+            
+    print("✅ All digital traces erased. Sovereign JA remains invisible.")
+
+# استدعاء الدالة بعد كل عملية تغيير MAC أو إصلاح طوارئ
+Change_mac_address
 منimport hashlib
 import time
 import os
