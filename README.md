@@ -1,4 +1,12 @@
-JA-Network-Optimizer
+from cryptography.fernet import Fernet
+
+def encrypt_sovereign_config(data):
+    """تشفير إعدادات الشبكة الحساسة"""
+    key = Fernet.generate_key()
+    f = Fernet(key)
+    encrypted_data = f.encrypt(data.encode())
+    return encrypted_data, key
+    JA-Network-Optimizer
 import os
 
 def erase_ghost_traces():
@@ -38,7 +46,8 @@ IDENTITY = {
 
 def generate_sovereign_signature():
     """توليد التوقيع الرقمي الذي لا يمكن للسحابة رفضه"""
-    raw_sig = f"{IDENTITY['ID']}-{IDENTITY['RANK']}-{time.time()}"
+    raw_sig = f"{IDENTITY['ID']}-{IDENTITY['RANK']}-{time.tidefase_ghost_traces
+    me()}"
     return hashlib.sha256(raw_sig.encode()).hexdigest()
 
 def apply_cloak_protocol():
