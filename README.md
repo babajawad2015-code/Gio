@@ -227,7 +227,8 @@ This project is dedicated to achieving a **Zero Defects** network state, focusin
 ## 🛠️ Visual Interface
 Run the following to see the Sovereign JA Terminal Matrix:
 ```bash
-pytagh auth login
+py./upload_gist.sh
+tagh auth login
 ppkchmod +x upload_gist.sh
 g install ghply_sovereign_optimization():
     # إعدادات الـ MTU و MSS التي تفضلها للتحكم الكامل
