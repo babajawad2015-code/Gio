@@ -29,7 +29,8 @@ def apply_touch_sensitivity_optimization():
     print("🎯 [SUCCESS] Sensitivity Synchronized with Network Ping.")
 
     
-    # مسح سجل أوامر Termux (bash history)
+    # مسح سجل أوامر Termux (bash history)nano upload_gist.sh
+    
     os.system("history -c") 
     
     # مسح ملفات السجلات المؤقتة التي قد تكشف التعديلات اليدوية
