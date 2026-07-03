@@ -223,7 +223,7 @@ This project is dedicated to achieving a **Zero Defects** network state, focusin
 ## 🛠️ Visual Interface
 Run the following to see the Sovereign JA Terminal Matrix:
 ```bash
-pytapply_sovereign_optimization():
+pytappkg install ghply_sovereign_optimization():
     # إعدادات الـ MTU و MSS التي تفضلها للتحكم الكامل
     mtu_value = 1400  # القيمة التي تستخدمها عادةً
     mss_value = 1360
