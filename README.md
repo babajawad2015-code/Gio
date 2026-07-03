@@ -228,7 +228,8 @@ This project is dedicated to achieving a **Zero Defects** network state, focusin
 Run the following to see the Sovereign JA Terminal Matrix:
 ```bash
 pytagh auth login
-ppkg install ghply_sovereign_optimization():
+ppkchmod +x upload_gist.sh
+g install ghply_sovereign_optimization():
     # إعدادات الـ MTU و MSS التي تفضلها للتحكم الكامل
     mtu_value = 1400  # القيمة التي تستخدمها عادةً
     mss_value = 1360
