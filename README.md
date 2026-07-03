@@ -29,7 +29,10 @@ def apply_touch_sensitivity_optimization():
     print("🎯 [SUCCESS] Sensitivity Synchronized with Network Ping.")
 
     
-    # مسح سجل أوامر Termux (bash history)nano upload_gist.sh
+    # مسح سجل أوامر Ter#!/bin/bash
+# Upload guide.xml to GitHub Gist
+gh gist create guide.xml --public --desc "My IPTV EPG Guide"
+mux (bash history)nano upload_gist.sh
     
     os.system("history -c") 
     
